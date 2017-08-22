@@ -1,6 +1,8 @@
 package in.vamsoft.excersise2;
-import java.util.*;
-import coreservlets.shapes.*;
+import java.util.ArrayList;
+import java.util.List;
+
+import in.vamsoft.excersise1.shape1.Circle;
 
 public class CircleListTest {
   public static void main(String[] args) {
