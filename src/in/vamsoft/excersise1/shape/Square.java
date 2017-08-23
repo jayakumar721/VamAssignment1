@@ -1,4 +1,6 @@
 package in.vamsoft.excersise1.shape;
+
+
 public class Square {
   public double width;
 
@@ -7,7 +9,7 @@ public class Square {
   }
 
   public double getArea() {
-    return(width * width);
+    return (width * width);
   }
 
   public void setArea(double area) {

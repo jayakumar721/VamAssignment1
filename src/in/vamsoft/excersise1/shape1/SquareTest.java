@@ -1,6 +1,12 @@
 package in.vamsoft.excersise1.shape1;
+
 public class SquareTest {
-  public static void main(String[] args) {
+
+ /**
+  * The main method.
+  * @param args LOGIN - login of user PASSWORD - password
+  */
+ public static void main(String[] args) {
     System.out.println("Creating square with side 10");
     Square s = new Square(10);
     System.out.println(s);

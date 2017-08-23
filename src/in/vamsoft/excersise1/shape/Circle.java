@@ -1,4 +1,10 @@
 package in.vamsoft.excersise1.shape;
+
+/**
+ * creating Circle as class.
+ * @author JK
+ *
+ */
 public class Circle  {
   public double radius;
 
@@ -7,12 +13,11 @@ public class Circle  {
   }
 
   public double getArea() {
-    return(Math.PI * radius * radius);
+    return (Math.PI * radius * radius);
   }
 
   public void printInfo() {
-    System.out.println("Radius: " + radius +
-                       ", Area: " + getArea());
+    System.out.println("Radius: " + radius + ", Area: " + getArea());
   }
 
   public void setArea(double area) {

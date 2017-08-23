@@ -1,4 +1,5 @@
 package in.vamsoft.excersise1.shape1;
+
 public class Circle {
   private double radius;
 
@@ -14,7 +15,7 @@ public class Circle {
    */
   
   public double getRadius() {
-    return(radius);
+    return (radius);
   }
 
   /** Sets the current radius. The units are the same
@@ -30,14 +31,13 @@ public class Circle {
    *  then the area is in square meters. 
    */
   public double getArea() {
-    return(Math.PI * radius * radius);
+    return (Math.PI * radius * radius);
   }
 
   /** Prints info about the Circle. */
   @Override
   public String toString() {
-    return("Circle (radius=" + radius + 
-           ", area=" + getArea() + ")");
+    return ("Circle (radius=" + radius + ", area=" + getArea() + ")");
   }
 
   /** Indirectly sets the area by working backward to the radius.

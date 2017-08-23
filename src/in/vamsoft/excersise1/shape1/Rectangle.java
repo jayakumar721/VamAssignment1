@@ -1,6 +1,7 @@
 package in.vamsoft.excersise1.shape1;
+
 public class Rectangle {
-  private double width, height;
+private double width, height;
 
   /** Builds a Rectangle with the given width and height. */
   
@@ -12,7 +13,7 @@ public class Rectangle {
   /** Returns the width that was previously set. */
   
   public double getWidth() {
-    return(width);
+    return (width);
   }
 
   /** Sets the width. */
@@ -24,7 +25,7 @@ public class Rectangle {
   /** Returns the height that was previously set. */
   
   public double getHeight() {
-    return(height);
+    return (height);
   }
   
   /** Sets the height. */
@@ -36,15 +37,13 @@ public class Rectangle {
   /** Calculates and returns the area (width * height). */
   
   public double getArea() {
-    return(width * height);
+    return (width * height);
   }
   
   /** Prints info about the Rectangle. */
   
   @Override
   public String toString() {
-    return("Rectangle (width=" + width + 
-           ", height=" + height +
-           ", area=" + getArea() + ")");
+    return ("Rectangle (width=" + width + ", height=" + height + ", area=" + getArea() + ")");
   }
 }

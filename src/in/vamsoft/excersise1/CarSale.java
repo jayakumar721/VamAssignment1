@@ -1,15 +1,23 @@
 package in.vamsoft.excersise1;
-public class CarSale implements Sellable {
+
+import java.io.Serializable;
+
+/**
+ * Creating CarSale class that implements serializable.
+ * @author JK
+ * 
+ */
+public class CarSale implements Serializable {
   private final String carName;
   private final double listPrice;
   private final double discount;
-  /**
-   * 
-   * @param carName 
-   * @param listPrice 
-   * @param discount 
-   */
 
+  /**
+   * Creating CarSacle as constructor with carName, listPrice and discount as parameters.
+   * @param carName getting car name as parameter
+   * @param listPrice getting price list as parameter
+   * @param discount getting discount amount as parameter
+   */
   public CarSale(String carName, double listPrice, double discount) {
     this.carName = carName;
     this.listPrice = listPrice;
@@ -17,28 +25,28 @@ public class CarSale implements Sellable {
   }
 
   public String getCarName() {
-    return(carName);
+    return (carName);
   }
 
   public double getListPrice() {
-    return(listPrice);
+    return (listPrice);
   }
 
-  /** The discount in percent. For example, if discount is 5, then the total cost is
-   *  0.95 times the list price.
+  /**
+   * creating getDiscount method.
+   * @return to return the discount amount
    */
   public double getDiscount() {
-    return(discount);
+    return (discount);
   }
-
-  @Override
+ 
   public double getCost() {
-    return(listPrice * (1.0 - discount/100));
+    return (listPrice * (1.0 - discount / 100));
   }
 
   @Override
   public String toString() {
-    return("CarSale: " + carName + " with list price of $" + listPrice 
+    return ("CarSale: " + carName + " with list price of $" + listPrice 
            + " and discount of " + discount + "%.");
   }
 }

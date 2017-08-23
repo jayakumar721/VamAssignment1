@@ -1,9 +1,20 @@
 package in.vamsoft.excersise1.shape;
+
+/**
+ * Creating RectangleTest as class.
+ * @author JK
+ *
+ */
 public class RectangleTest {
+
+ /**
+  * The main method.
+  * @param args LOGIN - login of user PASSWORD - password
+  */
   public static void main(String[] args) {
-    for(int i=0; i<10; i++) {
-      double width = 20*Math.random();
-      double height = 10*Math.random();
+    for (int i = 0; i < 10; i++) {
+      double width = 20 * Math.random();
+      double height = 10 * Math.random();
       Rectangle r = new Rectangle(width, height);
       System.out.println("Rectangle " + i);
       System.out.println("Width:  " + r.width);

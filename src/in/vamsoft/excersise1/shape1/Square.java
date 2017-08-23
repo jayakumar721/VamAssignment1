@@ -1,4 +1,5 @@
 package in.vamsoft.excersise1.shape1;
+
 public class Square extends Rectangle {
   
   /** Builds a Square with the given side as both its width and its height. */
@@ -38,7 +39,6 @@ public class Square extends Rectangle {
   
   @Override
   public String toString() {
-    return("Square (width/height=" + getWidth() + 
-           ", area=" + getArea() + ")");
+    return ("Square (width/height=" + getWidth() + ", area=" + getArea() + ")");
   }
 }
