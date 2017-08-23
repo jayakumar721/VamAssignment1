@@ -3,6 +3,12 @@ public class CarSale implements Sellable {
   private final String carName;
   private final double listPrice;
   private final double discount;
+  /**
+   * 
+   * @param carName 
+   * @param listPrice 
+   * @param discount 
+   */
 
   public CarSale(String carName, double listPrice, double discount) {
     this.carName = carName;
