@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package in.vamsoft.excersise1.shape1;
 
 public class Square extends Rectangle {
@@ -41,4 +42,38 @@ public class Square extends Rectangle {
   public String toString() {
     return ("Square (width/height=" + getWidth() + ", area=" + getArea() + ")");
   }
+=======
+package in.vamsoft.excersise1.shape1;
+/*
+ * @author vignesh
+ */
+ public class Square extends Rectangle {
+  
+  
+  public Square(double side) {
+    super(side, side);
+  }
+
+  private void setSides(double side) {
+    super.setWidth(side);
+    super.setHeight(side);
+  }
+  
+  public void setHeight(double height) {
+    setSides(height);
+  }
+  
+  public void setWidth(double width) {
+    setSides(width);
+  }
+
+  public void setArea(double area) {
+    setSides(Math.sqrt(area));
+  }
+  
+  public String toString() {
+    return("Square (width/height=" + getWidth() + 
+           ", area=" + getArea() + ")");
+  }
+>>>>>>> 35b1b732e68ed3b6596b2e23d9ec90c62220f54e
 }
